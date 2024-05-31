@@ -21,10 +21,7 @@
         <a href="index.html" class="header__logo mobile">
             <img src="img/svgicons/logo.svg" alt="logo">
         </a>
-        <div class="header__burger">
-            <span></span>
-        </div>
-        <nav class="header__menu">
+        <div class="header__icons mobile">
             <div class="header__search">
                 <button class="header__icon btn-search">
                     <img src="img/svgicons/search.svg" alt="search">
@@ -43,15 +40,72 @@
                     </div>
                 </form>
             </div>
-            <a href="#" class="header__link">Lighting</a>
+            <a href="#" class="header__icon">
+                <img src="img/svgicons/favorite.svg" alt="favorite">
+            </a>
+            <a href="#" class="header__icon ">
+                <img src="img/svgicons/cart.svg" alt="cart">
+            </a>
+        </div>
+        <div class="header__burger">
+            <span></span>
+        </div>
+        <nav class="header__menu">
+            <div class="header__search pc">
+                <button class="header__icon btn-search">
+                    <img src="img/svgicons/search.svg" alt="search">
+                </button>
+                <form action="#" class="dialogbox dialogbox-search">
+                    <input type="search" placeholder="Search...">
+                    <p>Recents view</p>
+                    <div class="flex">
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                    </div>
+                    <div class="close-btn dialogbox__close">
+                        <img src="img/svgicons/close.svg" alt="close">
+                    </div>
+                </form>
+            </div>
+            <div class="dropdown-container">
+                <a href="#" class="header__link">Lightning</a>
+                <div class="dropdown-container__hidden">
+                    <div class="dropdown-container__row">
+                        <div class="dropdown-container__item">
+                            <a href="#" class="dropdown-container__category">Category</a>
+                            <nav>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                            </nav>
+                        </div>
+                        <div class="dropdown-container__item">
+                            <a href="#" class="dropdown-container__category">Category</a>
+                            <nav>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <a href="#" class="header__link">Contact</a>
             <a href="index.html" class="header__logo pc">
                 <img src="img/svgicons/logo.svg" alt="logo">
             </a>
-            <a href="#" class="header__icon">
+            <a href="#" class="header__icon pc">
                 <img src="img/svgicons/favorite.svg" alt="favorite">
             </a>
-            <a href="#" class="header__icon">
+            <a href="#" class="header__icon pc">
                 <img src="img/svgicons/cart.svg" alt="cart">
             </a>
             <a href="#" class="header__link">Account</a>
@@ -96,7 +150,7 @@
                         <div class="swiper-button-next intro-next"></div>
                     </div>
                 </section>
-                <section class="block-half">
+                <section class="block-half section">
                     <div class="container">
                         <div class="block-half__row">
                             <div class="block-half__text">
@@ -181,7 +235,6 @@
             <nav class="footer__nav">
                 <h2>Support</h2>
                 <a href="#">FAQs</a>
-                <a href="#">Where to buy</a>
                 <a href="#">Contact us</a>
                 <a href="#">Privacy policy and cookies</a>
             </nav>

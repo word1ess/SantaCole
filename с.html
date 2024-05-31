@@ -21,7 +21,10 @@
         <a href="index.html" class="header__logo mobile">
             <img src="img/svgicons/logo.svg" alt="logo">
         </a>
-        <div class="header__icons mobile">
+        <div class="header__burger">
+            <span></span>
+        </div>
+        <nav class="header__menu">
             <div class="header__search">
                 <button class="header__icon btn-search">
                     <img src="img/svgicons/search.svg" alt="search">
@@ -40,72 +43,15 @@
                     </div>
                 </form>
             </div>
-            <a href="#" class="header__icon">
-                <img src="img/svgicons/favorite.svg" alt="favorite">
-            </a>
-            <a href="#" class="header__icon ">
-                <img src="img/svgicons/cart.svg" alt="cart">
-            </a>
-        </div>
-        <div class="header__burger">
-            <span></span>
-        </div>
-        <nav class="header__menu">
-            <div class="header__search pc">
-                <button class="header__icon btn-search">
-                    <img src="img/svgicons/search.svg" alt="search">
-                </button>
-                <form action="#" class="dialogbox dialogbox-search">
-                    <input type="search" placeholder="Search...">
-                    <p>Recents view</p>
-                    <div class="flex">
-                        <a href="#">Link</a>
-                        <a href="#">Link</a>
-                        <a href="#">Link</a>
-                        <a href="#">Link</a>
-                    </div>
-                    <div class="close-btn dialogbox__close">
-                        <img src="img/svgicons/close.svg" alt="close">
-                    </div>
-                </form>
-            </div>
-            <div class="dropdown-container">
-                <a href="#" class="header__link">Lightning</a>
-                <div class="dropdown-container__hidden">
-                    <div class="dropdown-container__row">
-                        <div class="dropdown-container__item">
-                            <a href="#" class="dropdown-container__category">Category</a>
-                            <nav>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                            </nav>
-                        </div>
-                        <div class="dropdown-container__item">
-                            <a href="#" class="dropdown-container__category">Category</a>
-                            <nav>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                                <a href="#">Lamp</a>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="#" class="header__link">Lighting</a>
             <a href="#" class="header__link">Contact</a>
             <a href="index.html" class="header__logo pc">
                 <img src="img/svgicons/logo.svg" alt="logo">
             </a>
-            <a href="#" class="header__icon pc">
+            <a href="#" class="header__icon">
                 <img src="img/svgicons/favorite.svg" alt="favorite">
             </a>
-            <a href="#" class="header__icon pc">
+            <a href="#" class="header__icon">
                 <img src="img/svgicons/cart.svg" alt="cart">
             </a>
             <a href="#" class="header__link">Account</a>
@@ -233,9 +179,6 @@
                                     <a href="#" class="btn">Discover our portable lamps</a>
                                     <a href="#" class="btn btn-white">Discover our portable lamps</a>
                                 </div>
-                                <footer class="block-social">
-                                    <a href="#">Link</a>
-                                </footer>
                             </div>
                             <div class="block-half__image">
                                 <img src="img/index/lamps.png" alt="">
@@ -250,7 +193,7 @@
                         </div>
                         <div class="slide-hidden">
                             <div class="slide-options">
-                                <div class="slide-option flex">
+                                <div class="slide-option">
                                     <h3>Dimension plane</h3>
                                     <img src="img/index/lamp-1.png" alt="">
                                 </div>
@@ -315,6 +258,49 @@
                                     <img src="img/svgicons/download.svg" alt="download">
                                 </a>
                             </div>
+                        </div>
+                        <div class="slide-show">
+                            Form
+                        </div>
+                        <div class="slide-hidden">
+                            <form action="#" class="contacts__form">
+                                <p>Estas y otras modificaciones se estudiarán bajo petición respetando nuestros mínimos de cantidades. Contáctanos para solicitar tu modificación.</p>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Name*"
+                                    required
+                                >
+                                <input
+                                    type="text"
+                                    name="lastname"
+                                    placeholder="Last Name*"
+                                    required
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email*"
+                                    required
+                                >
+                                <input type="tel" name="phone" placeholder="Phone Number">
+                                <input type="text" name="country" placeholder="Country">
+                                <input type="text" name="reason" placeholder="Contact reason">
+                                <textarea name="comment" placeholder="Message"></textarea>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox">
+                                    <p>
+                                        Я согласен на
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox">
+                                    <p>
+                                        Я согласен на
+                                    </p>
+                                </label>
+                                <button type="submit" class="btn">Отправить</button>
+                            </form>
                         </div>
                         <div class="slide-show">
                             Parts
@@ -503,6 +489,7 @@
             <nav class="footer__nav">
                 <h2>Support</h2>
                 <a href="#">FAQs</a>
+                <a href="#">Where to buy</a>
                 <a href="#">Contact us</a>
                 <a href="#">Privacy policy and cookies</a>
             </nav>

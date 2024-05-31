@@ -11,7 +11,7 @@
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script defer src="js/app.min.js"></script>
-    <title>Каталог</title>
+    <title>Контакты</title>
 </head>
 
     <body>
@@ -21,10 +21,7 @@
         <a href="index.html" class="header__logo mobile">
             <img src="img/svgicons/logo.svg" alt="logo">
         </a>
-        <div class="header__burger">
-            <span></span>
-        </div>
-        <nav class="header__menu">
+        <div class="header__icons mobile">
             <div class="header__search">
                 <button class="header__icon btn-search">
                     <img src="img/svgicons/search.svg" alt="search">
@@ -43,15 +40,72 @@
                     </div>
                 </form>
             </div>
-            <a href="#" class="header__link">Lighting</a>
+            <a href="#" class="header__icon">
+                <img src="img/svgicons/favorite.svg" alt="favorite">
+            </a>
+            <a href="#" class="header__icon ">
+                <img src="img/svgicons/cart.svg" alt="cart">
+            </a>
+        </div>
+        <div class="header__burger">
+            <span></span>
+        </div>
+        <nav class="header__menu">
+            <div class="header__search pc">
+                <button class="header__icon btn-search">
+                    <img src="img/svgicons/search.svg" alt="search">
+                </button>
+                <form action="#" class="dialogbox dialogbox-search">
+                    <input type="search" placeholder="Search...">
+                    <p>Recents view</p>
+                    <div class="flex">
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                    </div>
+                    <div class="close-btn dialogbox__close">
+                        <img src="img/svgicons/close.svg" alt="close">
+                    </div>
+                </form>
+            </div>
+            <div class="dropdown-container">
+                <a href="#" class="header__link">Lightning</a>
+                <div class="dropdown-container__hidden">
+                    <div class="dropdown-container__row">
+                        <div class="dropdown-container__item">
+                            <a href="#" class="dropdown-container__category">Category</a>
+                            <nav>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                            </nav>
+                        </div>
+                        <div class="dropdown-container__item">
+                            <a href="#" class="dropdown-container__category">Category</a>
+                            <nav>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                                <a href="#">Lamp</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <a href="#" class="header__link">Contact</a>
             <a href="index.html" class="header__logo pc">
                 <img src="img/svgicons/logo.svg" alt="logo">
             </a>
-            <a href="#" class="header__icon">
+            <a href="#" class="header__icon pc">
                 <img src="img/svgicons/favorite.svg" alt="favorite">
             </a>
-            <a href="#" class="header__icon">
+            <a href="#" class="header__icon pc">
                 <img src="img/svgicons/cart.svg" alt="cart">
             </a>
             <a href="#" class="header__link">Account</a>
@@ -59,22 +113,34 @@
     </div>
 </header>
 
+            <svg display="none">
+                <symbol id="likeProduct" viewBox="0 0 16 16">
+                    <g>
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8 3.00016C6.5005 1.25264 3.99481 0.712586 2.11602 2.31279C0.237233 3.91299 -0.0272752 6.58842 1.44815 8.481C2.67487 10.0545 6.38733 13.3733 7.60408 14.4474C7.74017 14.5676 7.80825 14.6277 7.88767 14.6513C7.95692 14.6718 8.03275 14.6718 8.10208 14.6513C8.1815 14.6277 8.2495 14.5676 8.38567 14.4474C9.60242 13.3733 13.3148 10.0545 14.5416 8.481C16.017 6.58842 15.7848 3.89615 13.8737 2.31279C11.9626 0.729419 9.4995 1.25264 8 3.00016Z"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                    </g>
+                </symbol>
+            </svg>
             <main class="content">
                 <article class="products article products__big">
                     <div class="container">
                         <header class="block-header flex bordered">
                             <div>
-                                <h1>Americana</h1>
-                                <p>
-                                    Miguel Mila
-                                    <br>
-                                    1964
-                                </p>
+                                <h1>Batería</h1>
+                                <p>Lámparas portables de batería con energía autónoma recargable. Aptas para salir al exterior, ligeras y con una luz que se puede adecuar según su uso. Su calidad y versatilidad nos estimula a explorar todas sus utilidades.</p>
                             </div>
                             <a href="#" class="btn-filters filters-btn">Открыть фильтры</a>
                         </header>
                         <div class="products__row">
                             <a href="#" class="products__item">
+                                <svg>
+                                    <use xlink:href="#likeProduct"></use>
+                                </svg>
                                 <div class="products__img">
                                     <img src="img/index/lamp-1.png" alt="">
                                 </div>
@@ -87,283 +153,9 @@
                                 </div>
                             </a>
                             <a href="#" class="products__item">
-                                <div class="products__img">
-                                    <img src="img/index/lamp-2.png" alt="">
-                                </div>
-                                <div class="products__info">
-                                    <div class="products__name">
-                                        <h3>Cestita Batería</h3>
-                                        <p>Miguel Milá</p>
-                                    </div>
-                                    <p>Table lamps</p>
-                                </div>
-                            </a>
-                            <a href="#" class="products__item">
-                                <div class="products__img">
-                                    <img src="img/index/lamp-3.png" alt="">
-                                </div>
-                                <div class="products__info">
-                                    <div class="products__name">
-                                        <h3>Cestita Batería</h3>
-                                        <p>Miguel Milá</p>
-                                    </div>
-                                    <p>Table lamps</p>
-                                </div>
-                            </a>
-                            <a href="#" class="products__item">
-                                <div class="products__img">
-                                    <img src="img/index/lamp-4.png" alt="">
-                                </div>
-                                <div class="products__info">
-                                    <div class="products__name">
-                                        <h3>Cestita Batería</h3>
-                                        <p>Miguel Milá</p>
-                                    </div>
-                                    <p>Table lamps</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="gallery article">
-                    <div class="container">
-                        <div class="gallery__row swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="img/products/1.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/products/2.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/products/3.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/products/4.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/products/1.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/products/2.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/products/3.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/products/4.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-pagintaion gallery-pagination"></div>
-                        </div>
-                    </div>
-                </article>
-                <section class="block-half">
-                    <div class="container">
-                        <div class="block-half__row">
-                            <div class="block-half__text">
-                                <header class="block-header">
-                                    <h1>Americana</h1>
-                                    <p>
-                                        Miguel Mila
-                                        <br>
-                                        1964
-                                    </p>
-                                </header>
-                                <p>
-                                    Made of water-resistant materials for outdoor use and batteries designed to keep you
-                                    company inlife outside, our collection is composed of iconic pieces and contemporary
-                                    designs.
-                                </p>
-                                <div class="flex">
-                                    <a href="#" class="btn">Discover our portable lamps</a>
-                                    <a href="#" class="btn btn-white">Discover our portable lamps</a>
-                                </div>
-                            </div>
-                            <div class="block-half__image">
-                                <img src="img/index/lamps.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <article class="slides-container">
-                    <div class="container">
-                        <div class="slide-show">
-                            Categorias
-                        </div>
-                        <div class="slide-hidden">
-                            <div class="slide-options">
-                                <div class="slide-option">
-                                    <h3>Dimension plane</h3>
-                                    <img src="img/index/lamp-1.png" alt="">
-                                </div>
-                                <div class="slide-option">
-                                    <h3>Overview</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima mollitia vitae accusantium suscipit veniam, nisi illo corporis maiores voluptate voluptatibus blanditiis beatae, necessitatibus id corrupti officia et incidunt iure saepe!</p>
-                                    <div class="slide-sertifications">
-                                        <div class="slide-sertification">
-                                            <img src="img/index/ce.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide-option">
-                                    <h3>Dimension plane</h3>
-                                    <p>
-                                        Incluye fuente de luz (regulable): LED integrado. Output 20 W / Input: 110 ~ 240 Vac. (50 Hz / 60 Hz). Según destino.
-                                        <br>
-                                        CCT: 2.700 K
-                                        <br>
-                                        IRC: 90
-                                        <br>
-                                        Vida útil: 40.000 h
-                                        <br>
-                                        Flujo luminoso: 602 lm
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-show">
-                            Downloads
-                        </div>
-                        <div class="slide-hidden">
-                            <div class="slide-downloads">
-                                <a href="#" class="slide-download">
-                                    File name
-                                    <span>PDF</span>
-                                    <img src="img/svgicons/download.svg" alt="download">
-                                </a>
-                                <a href="#" class="slide-download">
-                                    File name
-                                    <span>PDF</span>
-                                    <img src="img/svgicons/download.svg" alt="download">
-                                </a>
-                                <a href="#" class="slide-download">
-                                    File name
-                                    <span>PDF</span>
-                                    <img src="img/svgicons/download.svg" alt="download">
-                                </a>
-                                <a href="#" class="slide-download">
-                                    File name
-                                    <span>PDF</span>
-                                    <img src="img/svgicons/download.svg" alt="download">
-                                </a>
-                                <a href="#" class="slide-download">
-                                    File name
-                                    <span>PDF</span>
-                                    <img src="img/svgicons/download.svg" alt="download">
-                                </a>
-                                <a href="#" class="slide-download">
-                                    File name
-                                    <span>PDF</span>
-                                    <img src="img/svgicons/download.svg" alt="download">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slide-show">
-                            Form
-                        </div>
-                        <div class="slide-hidden">
-                            <form action="#" class="contacts__form">
-                                <p>Estas y otras modificaciones se estudiarán bajo petición respetando nuestros mínimos de cantidades. Contáctanos para solicitar tu modificación.</p>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    placeholder="Name*"
-                                    required
-                                >
-                                <input
-                                    type="text"
-                                    name="lastname"
-                                    placeholder="Last Name*"
-                                    required
-                                >
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="Email*"
-                                    required
-                                >
-                                <input type="tel" name="phone" placeholder="Phone Number">
-                                <input type="text" name="country" placeholder="Country">
-                                <input type="text" name="reason" placeholder="Contact reason">
-                                <textarea name="comment" placeholder="Message"></textarea>
-                                <label class="checkbox">
-                                    <input type="checkbox" class="custom-checkbox">
-                                    <p>
-                                        Я согласен на
-                                    </p>
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox" class="custom-checkbox">
-                                    <p>
-                                        Я согласен на
-                                    </p>
-                                </label>
-                                <button type="submit" class="btn">Отправить</button>
-                            </form>
-                        </div>
-                        <div class="slide-show">
-                            Parts
-                        </div>
-                        <div class="slide-hidden">
-                            <article class="products article">
-                                <div class="products__row">
-                                    <a href="#" class="products__item">
-                                        <div class="products__img">
-                                            <img src="img/index/lamp-1.png" alt="">
-                                        </div>
-                                        <div class="products__info">
-                                            <h3>Cestita Batería</h3>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="products__item">
-                                        <div class="products__img">
-                                            <img src="img/index/lamp-2.png" alt="">
-                                        </div>
-                                        <div class="products__info">
-                                            <h3>Cestita Batería</h3>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="products__item">
-                                        <div class="products__img">
-                                            <img src="img/index/lamp-3.png" alt="">
-                                        </div>
-                                        <div class="products__info">
-                                            <h3>Cestita Batería</h3>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="products__item">
-                                        <div class="products__img">
-                                            <img src="img/index/lamp-4.png" alt="">
-                                        </div>
-                                        <div class="products__info">
-                                            <h3>Cestita Batería</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </article>
-                <article class="products article bordered">
-                    <div class="container">
-                        <header class="block-header flex">
-                            <h2>Related products</h2>
-                        </header>
-                        <div class="products__row">
-                            <a href="#" class="products__item">
-                                <div class="products__img">
-                                    <img src="img/index/lamp-1.png" alt="">
-                                </div>
-                                <div class="products__info">
-                                    <div class="products__name">
-                                        <h3>Cestita Batería</h3>
-                                        <p>Miguel Milá</p>
-                                    </div>
-                                    <p>Table lamps</p>
-                                </div>
-                            </a>
-                            <a href="#" class="products__item">
+                                <svg class="active">
+                                    <use xlink:href="#likeProduct"></use>
+                                </svg>
                                 <div class="products__img">
                                     <img src="img/index/lamp-2.png" alt="">
                                 </div>
@@ -403,84 +195,61 @@
                     </div>
                 </article>
                 <aside class="filter dialogbox dialogbox-filters">
-                    <form action="#" class="filter__form">
-                        <div class="dialogbox__close">
-                            <img src="img/svgicons/close.svg" alt="close">
+                    <div class="dialogbox__close">
+                        <img src="img/svgicons/close.svg" alt="close">
+                    </div>
+                    <h2>Филтры</h2>
+                    <div class="slides-container">
+                        <div class="slide-show">
+                            Diseñadores
                         </div>
-                        <h2>Филтры</h2>
-                        <div class="slides-container">
-                            <div class="slide-show">
-                                Categorias
-                            </div>
-                            <div class="slide-hidden">
-                                <label class="checkbox">
-                                    <input type="checkbox" class="custom-checkbox">
-                                    <p>
-                                        Селект
-                                    </p>
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox" class="custom-checkbox">
-                                    <p>
-                                        Селект
-                                    </p>
-                                </label>
-                            </div>
-                            <div class="slide-show">
-                                Diseñadores
-                            </div>
-                            <div class="slide-hidden">
-                                <input type="text" placeholder="Text">
-                                <a href="#" class="slide__company">Jordi Garsec</a>
-                                <a href="#" class="slide__company">Jordi Garsec</a>
-                                <a href="#" class="slide__company">Jordi Garsec</a>
-                                <a href="#" class="slide__company">Jordi Garsec</a>
-                                <a href="#" class="slide__company">Jordi Garsec</a>
-                            </div>
-                            <div class="slide-show">
-                                Ordenar por
-                            </div>
-                            <div class="slide-hidden">
-                                <label class="checkbox">
-                                    <input type="checkbox" class="custom-checkbox">
-                                    <p>
-                                        Селект
-                                    </p>
-                                </label>
-                                <label class="checkbox">
-                                    <input type="checkbox" class="custom-checkbox">
-                                    <p>
-                                        Селект
-                                    </p>
-                                </label>
-                            </div>
+                        <div class="slide-hidden">
+                            <input type="text" placeholder="Text">
+                            <a href="#" class="slide__company">Jordi Garsec</a>
+                            <a href="#" class="slide__company">Jordi Garsec</a>
+                            <a href="#" class="slide__company">Jordi Garsec</a>
+                            <a href="#" class="slide__company">Jordi Garsec</a>
+                            <a href="#" class="slide__company">Jordi Garsec</a>
                         </div>
-                        <div class="filter__filters">
-                            <p>Filters</p>
-                            <div class="filter__current">
-                                <div>
-                                    Example
-                                    <button class="filter__close"></button>
-                                </div>
-                                <div>
-                                    Example
-                                    <button class="filter__close"></button>
-                                </div>
-                                <div>
-                                    Example
-                                    <button class="filter__close"></button>
-                                </div>
-                                <div>
-                                    Example
-                                    <button class="filter__close"></button>
-                                </div>
+                        <div class="slide-show">
+                            Ordenar por
+                        </div>
+                        <div class="slide-hidden">
+                            <label class="checkbox">
+                                <input type="checkbox" class="custom-checkbox">
+                                <p>
+                                    Селект
+                                </p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" class="custom-checkbox">
+                                <p>
+                                    Селект
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                    <footer class="filter__filters">
+                        <p>Filters</p>
+                        <div class="filter__current">
+                            <div>
+                                Example
+                                <button class="filter__close"></button>
+                            </div>
+                            <div>
+                                Example
+                                <button class="filter__close"></button>
+                            </div>
+                            <div>
+                                Example
+                                <button class="filter__close"></button>
+                            </div>
+                            <div>
+                                Example
+                                <button class="filter__close"></button>
                             </div>
                         </div>
-                        <div class="filter__btns">
-                            <button type="submit" class="btn">Применить</button>
-                            <button type="reset" class="btn btn-white">Сбросить</button>
-                        </div>
-                    </form>
+                    </footer>
                 </aside>
             </main>
             <footer class="footer">
@@ -489,7 +258,6 @@
             <nav class="footer__nav">
                 <h2>Support</h2>
                 <a href="#">FAQs</a>
-                <a href="#">Where to buy</a>
                 <a href="#">Contact us</a>
                 <a href="#">Privacy policy and cookies</a>
             </nav>
