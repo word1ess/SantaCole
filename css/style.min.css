@@ -864,7 +864,7 @@ textarea {
   grid-template-columns: repeat(4, 1fr);
 }
 .products__big .products__row {
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 .products__big .products__img {
   margin-bottom: 20px;
@@ -1016,6 +1016,9 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+  .product__big .product__row{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
   .dropdown-container {
     display: flex;
     width: 100%;
