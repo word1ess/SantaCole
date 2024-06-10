@@ -492,6 +492,9 @@ textarea {
 .block-half__row {
   display: flex;
 }
+.block-half__row.reverse {
+  flex-direction: row-reverse;
+}
 .block-half__text {
   display: flex;
   flex-direction: column;
@@ -864,7 +867,7 @@ textarea {
   grid-template-columns: repeat(4, 1fr);
 }
 .products__big .products__row {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 .products__big .products__img {
   margin-bottom: 20px;
@@ -951,6 +954,37 @@ textarea {
   left: 0px;
 }
 
+.faq__row {
+  margin-top: 64px;
+}
+.faq__header {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.faq__answers {
+  max-width: 50%;
+  margin-left: auto;
+}
+.faq__answers h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-decoration: underline;
+}
+.faq__answers p {
+  font-size: 14px;
+}
+
+.about__row img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+.about__row p {
+  max-width: 66%;
+  margin: 75px 0px 75px auto;
+}
+
 .footer {
   background: #1d1d1f;
   padding: 60px 7%;
@@ -1016,9 +1050,6 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-  .product__big .product__row{
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
   .dropdown-container {
     display: flex;
     width: 100%;
@@ -1162,10 +1193,18 @@ body {
   .products__row {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
+  .about__row p,
+  .faq__answers {
+    margin-left: 0px;
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .block-half__row {
     flex-direction: column-reverse;
+  }
+  .block-half__row.reverse {
+    flex-direction: column;
   }
   .flex {
     flex-wrap: wrap;
