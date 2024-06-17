@@ -511,6 +511,10 @@ textarea {
   max-width: 50%;
   max-height: 100%;
 }
+.block-half__image .swiper {
+  width: 100%;
+  height: 100%;
+}
 .block-half__image img {
   position: absolute;
   width: 100%;
@@ -597,6 +601,7 @@ textarea {
   display: flex;
   gap: 40px;
   padding-top: 32px;
+  margin-bottom: 32px;
 }
 .filter__filters p {
   margin-bottom: 0px;
@@ -607,6 +612,7 @@ textarea {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-x: auto;
 }
 .filter__current {
   display: flex;
@@ -938,6 +944,9 @@ textarea {
 
 .contacts {
   height: auto !important;
+}
+.contacts .block-half__image {
+  aspect-ratio: 1.2/1.1;
 }
 
 .gallery .swiper-slide {
